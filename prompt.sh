@@ -55,6 +55,7 @@ _bash_ps1() {
   echo -n '$(_bash_ps1_git)'
 
   _set_color 120
+  tput bold
   echo -n ' ▹ '
 
   echo -n $'\[\e[m\]'
