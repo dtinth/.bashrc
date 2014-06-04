@@ -27,10 +27,12 @@ _bash_ps1() {
   echo -n '$(_bash_ps1_git)'
 
   _set_color 120
+  echo -n '\['
   tput bold
+  echo -n '\]'
   echo -n ' ▹ '
 
-  echo -n $'\[\e[m\]'
+  echo -n $'\\[\e[m\\]'
 }
 
 PS1=$(_bash_ps1)
